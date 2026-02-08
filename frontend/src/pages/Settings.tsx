@@ -27,7 +27,7 @@ export default function Settings() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1">
+                <div className="flex-1 space-y-6">
                     {/* Language Card */}
                     <div className="bg-white rounded-xl p-6 shadow-sm">
                         <h2 className="text-lg font-semibold mb-1">App Language</h2>
@@ -36,20 +36,42 @@ export default function Settings() {
                         </p>
 
                         <div className="space-y-3">
-                            {/* English (selected) */}
                             <div className="flex items-center justify-between border border-blue-500 bg-blue-50 rounded-lg p-4">
                                 <span>🇬🇧 English</span>
                                 <span className="text-blue-600 font-bold">✓</span>
                             </div>
-
-                            {/* French */}
                             <div className="border rounded-lg p-4 hover:bg-gray-50 cursor-pointer">
                                 🇫🇷 French
                             </div>
-
-                            {/* Spanish */}
                             <div className="border rounded-lg p-4 hover:bg-gray-50 cursor-pointer">
                                 🇪🇸 Spanish
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Region & Timezone Card */}
+                    <div className="bg-white rounded-xl p-6 shadow-sm">
+                        <h2 className="text-lg font-semibold mb-4">
+                            Region & Timezone
+                        </h2>
+
+                        <div className="space-y-4">
+                            <div>
+                                <label className="text-sm text-gray-600">Region</label>
+                                <select className="mt-1 w-full border rounded-lg px-3 py-2">
+                                    <option>United Kingdom</option>
+                                    <option>Sri Lanka</option>
+                                    <option>United States</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label className="text-sm text-gray-600">Timezone</label>
+                                <select className="mt-1 w-full border rounded-lg px-3 py-2">
+                                    <option>GMT (London)</option>
+                                    <option>Asia/Colombo</option>
+                                    <option>EST (New York)</option>
+                                </select>
                             </div>
                         </div>
                     </div>
