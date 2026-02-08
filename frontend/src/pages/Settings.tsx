@@ -27,26 +27,27 @@ export default function Settings() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 space-y-6">
+                <div className="flex-1">
                     {/* Language Card */}
                     <div className="bg-white rounded-xl p-6 shadow-sm">
-                        <h2 className="text-lg font-semibold mb-1">
-                            App Language
-                        </h2>
+                        <h2 className="text-lg font-semibold mb-1">App Language</h2>
                         <p className="text-gray-500 mb-4">
                             Select your preferred language for the application
                         </p>
 
                         <div className="space-y-3">
+                            {/* English (selected) */}
                             <div className="flex items-center justify-between border border-blue-500 bg-blue-50 rounded-lg p-4">
                                 <span>🇬🇧 English</span>
                                 <span className="text-blue-600 font-bold">✓</span>
                             </div>
 
+                            {/* French */}
                             <div className="border rounded-lg p-4 hover:bg-gray-50 cursor-pointer">
                                 🇫🇷 French
                             </div>
 
+                            {/* Spanish */}
                             <div className="border rounded-lg p-4 hover:bg-gray-50 cursor-pointer">
                                 🇪🇸 Spanish
                             </div>
