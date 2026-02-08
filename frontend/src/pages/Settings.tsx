@@ -75,6 +75,35 @@ export default function Settings() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Permissions Card */}
+                    <div className="bg-white rounded-xl p-6 shadow-sm">
+                        <h2 className="text-lg font-semibold mb-4">
+                            Permissions
+                        </h2>
+
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <p className="font-medium">Microphone Access</p>
+                                    <p className="text-sm text-gray-500">
+                                        Allow access to microphone for voice analysis
+                                    </p>
+                                </div>
+                                <input type="checkbox" className="w-5 h-5" />
+                            </div>
+
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <p className="font-medium">Camera Access</p>
+                                    <p className="text-sm text-gray-500">
+                                        Allow access to camera for posture detection
+                                    </p>
+                                </div>
+                                <input type="checkbox" className="w-5 h-5" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
